@@ -34,8 +34,6 @@ def main():
         parch_slider = st.slider('Liczba rodziców i/lub dzieci', min_value=0, max_value=6)
         fare_slider = st.slider('Cena biletu', min_value=0, max_value=500, step=10)
 
-    st.write(model.feature_names_in_)
-
     data = [[pclass_radio, age_slider, sibsp_slider,
              parch_slider, fare_slider, embarked_radio,
              sex_radio]]
